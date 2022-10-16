@@ -58,47 +58,47 @@ window.addEventListener('DOMContentLoaded', event => {
 //Animacion TimeLine--------------------------------
 
 
+
+
 document.addEventListener('scroll', () => {
-    
-    const panel1 = document.querySelector('#lista1');
-    const panel2 = document.querySelector('#lista2');
-    const panel3 = document.querySelector('#lista3');
-    const panel4 = document.querySelector('#lista4');
 
-    const screenSize = window.innerHeight;
+    const panel1 = document.querySelector("#lista1");
+    const panel2 = document.querySelector("#lista2");
+    const panel3 = document.querySelector("#lista3");
+    const panel4 = document.querySelector("#lista4");
+    const screenSize=window.innerHeight;
 
+    // if (panel1.getBoundingClientRect().top < screenSize){
 
-    if (panel1.getBoundingClientRect().top < screenSize){
+    //     panel1.classList.add('animate__animated' ,'animate__fadeIn')
+    // }else{
+    //     panel1.classList.remove('animate__animated' ,'animate__fadeIn')
+    // }
+    if (panel2.getBoundingClientRect().top < screenSize){
 
-        lista1.classList.add('animate__animated', 'animate__fadeInLeft');
-    
-    } else {
-    lista1.classList.remove('animate__animated', 'animate__fadeInLeft');
-  };
-
-
-    /*if (panel2.getBoundingClientRect().top < screenSize){
-
-        lista2.classList.add('animate__animated', 'animate__fadeInRight');
-    } else {
-        lista2.classList.remove('animate__animated', 'animate__fadeInRight');
-      };*/
-
-
+        panel2.classList.add('animate__animated' ,'animate__fadeIn')
+    }else{
+        panel2.classList.remove('animate__animated' ,'animate__fadeIn')
+    }
     if (panel3.getBoundingClientRect().top < screenSize){
 
-        lista3.classList.add('animate__animated', 'animate__fadeInLeft');
-    } else {
-        lista3.classList.remove('animate__animated', 'animate__fadeInLeft');
-      };
+        panel3.classList.add('animate__animated' ,'animate__fadeIn')
+    }else{
+        panel3.classList.remove('animate__animated' ,'animate__fadeIn')
+    }
+    if (panel4.getBoundingClientRect().top < screenSize){
+
+        panel4.classList.add('animate__animated' ,'animate__fadeIn')
+    }else{
+        panel4.classList.remove('animate__animated' ,'animate__fadeIn')
+    }
 
 
-   /* if (panel4.getBoundingClientRect().top < screenSize){
 
-        lista4.classList.add('animate__animated', 'animate__fadeInRight');
-    } else {
-        lista4.classList.remove('animate__animated', 'animate__fadeInRight');
-      };*/
-    
 
+//operador ternario-------------------------------------
+    let animacion = (panel1.getBoundingClientRect().top < screenSize)
+    ?panel1.classList.add('animate__animated' ,'animate__fadeIn')
+    :panel1.classList.remove('animate__animated' ,'animate__fadeIn');
 });
+
