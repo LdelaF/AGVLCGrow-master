@@ -11878,5 +11878,12 @@ width: 50px;
 /* icono nav instagram */
 .bi-instagram {
   text-align: center;
+
 }
 
+@media (min-width:1024px) {
+  .bi-instagram {
+width: 35px;
+height: 35px;
+  }
+}
