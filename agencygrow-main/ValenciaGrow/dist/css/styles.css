@@ -3248,8 +3248,8 @@ textarea.form-control-lg {
 }
 
 .btn-dark {
-  color: #fff;
-  background-color: var(--bs-orange);
+  color:var(--bs-orange);
+  background-color: var(--bs-green);
   border-color: var(--bs-green);
 }
 .btn-dark:hover {
@@ -4501,8 +4501,8 @@ textarea.form-control-lg {
   color: #fff;
 }
 .navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0.55);
-  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--bs-green);
+  border-color: var(--bs-green);
 }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -6012,7 +6012,7 @@ textarea.form-control-lg {
   overflow: hidden;
   background-position: center;
   background-size:contain;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 .carousel-inner::after {
   display: block;
@@ -11320,7 +11320,7 @@ p {
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
@@ -11336,7 +11336,19 @@ p {
     padding: 9rem 0;
   }
 }
+
+@media (min-width: 768px){
+
 .btn-xl {
+  padding: 1.25rem 2.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 6em;
+}
+}
+
+.btn-sm {
   padding: 1.25rem 2.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.125rem;
@@ -11878,7 +11890,10 @@ width: 50px;
 /* icono nav instagram */
 .bi-instagram {
   text-align: center;
+}
+.bi-instagram:hover{
 
+  fill: var(--bs-orange);
 }
 
 @media (min-width:1024px) {
