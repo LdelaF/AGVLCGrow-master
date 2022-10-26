@@ -11874,8 +11874,8 @@ width: 50px;
 #wpimage{
   font-size:50px;
   color: var(--bs-green);
-  z-index: 9999;
-  position: fixed;
+  z-index: 50;
+  position:fixed;
   bottom: 15px;
   right: 15px;
 }
@@ -11901,4 +11901,37 @@ width: 50px;
 width: 35px;
 height: 35px;
   }
+}
+
+.card{
+  display: none;
+	background: #fff;
+	width: calc(100% - 40px);
+	max-width: 300px;
+	line-height: 150%;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	z-index: 100;
+	box-shadow: 0px 2px 20px 10px rgba(222,222,222,.25);
+	text-align: center;
+  align-items: center;
+}
+
+
+.cookieImg{
+  width: 200px;
+
+}
+
+.card-title{
+
+    margin-top: -30px;
+}
+.card-link{
+  display: block;
+  margin-top: 10px;
+  color: black;
+  text-decoration: none;
 }
