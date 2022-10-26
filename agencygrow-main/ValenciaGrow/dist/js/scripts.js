@@ -102,3 +102,31 @@ document.addEventListener('scroll', () => {
     :panel1.classList.remove('animate__animated' ,'animate__fadeIn');
 });
 
+
+//Aviso de cookies
+
+const botonAceptarCookies = document.getElementById('CardButton');
+const avisoCookies = document.getElementById('cookieCard');
+const fondoCookies = document.getElementById('fondoCookies');
+
+
+dataLayer = [];
+
+if(!localStorage.getItem('acepteCookies')){
+    
+    avisoCookies.classList.add('activo');
+    fondoCookies.classList.add('activo');
+
+};
+
+    
+
+
+botonAceptarCookies.addEventListener('click', () => {
+    avisoCookies.classList.remove('activo');
+    fondoCookies.classList.remove('activo');
+
+    localStorage.setItem('acepteCookies', true);
+
+    dataLayer.push({'event' : 'aceptaCookies'});
+} );
