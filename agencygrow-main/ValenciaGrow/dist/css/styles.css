@@ -6000,6 +6000,7 @@ textarea.form-control-lg {
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
+  height: 540px;
 }
 
 .carousel.pointer-event {
@@ -6008,7 +6009,7 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  height: 20%;
+  height: 100%;
   overflow: hidden;
   background-position: center;
   background-size:contain;
@@ -11393,7 +11394,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.10rem;
+  font-size: 1rem;
   color:var(--bs-green);
   letter-spacing: 0.0625em;
 }
