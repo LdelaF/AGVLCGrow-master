@@ -6000,7 +6000,7 @@ textarea.form-control-lg {
   margin-top: 5%;
   margin-left: 5%;
   margin-right: 5%;
-  height: 540px;
+  height: auto;
 }
 
 .carousel.pointer-event {
