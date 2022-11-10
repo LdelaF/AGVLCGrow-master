@@ -11372,6 +11372,7 @@ p {
   padding-bottom: 1rem;
   background-color: #212529;
   opacity: 1;
+  align-items: center;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -11971,19 +11972,12 @@ height: 35px;
   display: block;
 }
 
+
 .ImgNav{
-position: static;
+position: absolute;
+margin-top: 8px;
 margin-right: 93px;
-width: 50px; 
+width: 100px; 
 }
 
-
-
-@media(min-width:1080px){
-  .ImgNav{
-    position: static;
-    margin-right: 80px;
-    width: 55px; 
-}
-}
 
